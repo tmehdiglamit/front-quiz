@@ -59,3 +59,6 @@ Contacto
 4.- 20 puntos
 <br />
 5.- 10 puntos
+<br />
+<br />
+Puntos extras por diseño responsive 😃

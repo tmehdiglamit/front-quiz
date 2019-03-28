@@ -1,0 +1,23 @@
+.shelf-item__thumb.back-img {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    z-index: -1;
+    max-width: calc(100% - 20px);
+    left: 10px;
+    transition: all 0.5s ease;
+}
+.shelf-container .shelf-item > .shelf-item__thumb:nth-of-type(2) {
+    transition: all 0.5s ease;
+}
+.shelf-container .shelf-item:hover > .shelf-item__thumb:nth-of-type(2) {
+    opacity: 0;
+}
+
+.shelf-container .shelf-item:hover .shelf-item__thumb.back-img {
+    opacity: 1;
+}
+
+.shelf-container .shelf-item .shelf-stopper {
+    z-index: 3;
+}

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import Thumb from '../../../Thumb';
 import { formatPrice } from '../../../../services/util';
 import { addProduct } from '../../../../services/cart/actions';
+import './style.scss';
 
 const Product = ({ product, addProduct }) => {
   product.quantity = 1;
@@ -12,6 +13,9 @@ const Product = ({ product, addProduct }) => {
   let formattedPrice = formatPrice(product.price, product.currencyId);
 
   let productInstallment;
+
+  const imgSrc = require(`../../../../static/products/${product.sku}_1.jpg`);
+  const imgSrcBack = require(`../../../../static/products/${product.sku}_2.jpg`);
 
   if (!!product.installments) {
     const installmentPrice = product.price / product.installments;
@@ -32,13 +36,20 @@ const Product = ({ product, addProduct }) => {
       className="shelf-item"
       onClick={() => addProduct(product)}
       data-sku={product.sku}
+     // onMouseOver={() => this.mouseOut()} 
+     // onMouseOut={() => imgSrc = require(`../../../../static/products/${product.sku}_2.jpg`)} 
     >
       {product.isFreeShipping && (
         <div className="shelf-stopper">Envío gratis</div>
       )}
       <Thumb
         classes="shelf-item__thumb"
-        src={require(`../../../../static/products/${product.sku}_1.jpg`)}
+        src={imgSrc}
+        alt={product.title}
+      />
+      <Thumb
+        classes="shelf-item__thumb back-img"
+        src={imgSrcBack}
         alt={product.title}
       />
       <p className="shelf-item__title">{product.title}</p>

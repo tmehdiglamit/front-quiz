@@ -2,6 +2,7 @@ import moxios from 'moxios';
 
 import Root from '../Root';
 import App from '../components/App';
+import Header from '../components/Header';
 import ShelfHeader from '../components/Shelf/ShelfHeader';
 import Product from '../components/Shelf/ProductList/Product';
 import CartProduct from '../components/FloatCart/CartProduct';

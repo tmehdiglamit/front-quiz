@@ -1,0 +1,242 @@
+.logo-container {
+    float: left;
+    width: 110px;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+i.fas.fa-bars {
+    display: none;
+}
+
+header {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+header .container-nav {
+    padding: 10px 20px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container-nav a {
+    color: #4d4d4d;
+    text-decoration: none;
+    margin-right: 15px;
+    position: relative;
+}
+
+header .container-nav .search-input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+header .container-nav nav > ul > li:nth-last-child(1) {
+    padding: 5px 0px;
+    border: 2px solid black;
+}
+
+header .container-nav nav > ul > li:nth-last-child(1) i.fas.fa-search {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .container-nav a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -10px;
+    height: 2px;
+    background: #c41230;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+header .container-nav a:hover:after {
+    width: 100%;
+}
+
+header .container-nav ul {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+header .container-nav ul li {
+    list-style: none;
+    float: left;
+    cursor: pointer;
+}
+
+header .container-nav ul.nav-submenu {
+    position: absolute;
+    display: block;
+    background: white;
+    padding-top: 0;
+    left: 0;
+    min-width: 125px;
+    top: 42px;
+    display: none;
+    box-shadow: 6px 5px 8px rgba(0, 0, 0, 0.05);
+    padding-bottom: 0;
+}
+
+li.dropdown-button a:after {
+    display: none;
+}
+
+ul.nav-submenu li {
+    float: left;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+li.nav-submenu-item:hover {
+    background: #b41731;
+}
+header .container-nav ul li:hover ul.nav-submenu {
+    display: block;
+}
+
+li.dropdown-button {
+    position: relative;
+}
+
+header .container-nav nav > ul > li {
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+header .container-nav nav > ul > li {
+    padding: 13px;
+}
+
+li.dropdown-button:hover {
+    background: #c41230;
+}
+
+li.dropdown-button:hover a {
+    color: white;
+}
+
+li.dropdown-button:hover ul.nav-submenu {
+    background: #c41230;
+}
+
+li.nav-submenu-item a {
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding: 13px;
+}
+
+.float-cart {
+    z-index: 9;
+}
+
+@media(max-width: 768px){
+    i.fas.fa-bars {
+    display: block;
+    }
+    header .container-nav nav {
+        position: fixed;
+        width: 30vw;
+        height: calc(100vh - 79px);
+        z-index: 12;
+        left: -50vw;
+        top: 79px;
+        background: white;
+        box-shadow: 1px 9px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+    }
+
+    header .container-nav nav > ul {
+        display: block;
+        width: 100%;
+    }
+
+    header .container-nav nav > ul li {
+        width: 100%;
+    }
+
+    header .container-nav nav > ul > li:nth-last-child(1) {
+        display: none;
+    }
+
+    header .container-nav {
+        justify-content: flex-start;
+    }
+
+    .logo-container {
+        margin-left: 30px;
+    }
+    header .container-nav nav.active {
+        left: 0vw;
+    }
+    li.dropdown-button:hover a {
+        color: black;
+    }
+
+    header .container-nav ul.nav-submenu {
+        position: relative;
+        float: left;
+        width: 100%;
+        color: black;
+    }
+    li.dropdown-button:hover {
+        background: white;
+    }
+    header .container-nav ul.nav-submenu a:hover {
+        background: white !important;
+    }
+    header {
+        z-index: 4;
+    }
+    header .container-nav ul.nav-submenu a {
+        background: white !important;
+    }
+
+    header .container-nav ul.nav-submenu a {
+        color: black;
+    }
+
+    li.dropdown-button:hover ul.nav-submenu {
+        background: white;
+        min-width: 0px;
+        width: 100%;
+        box-shadow: none;
+        top: inherit;
+        border-top: 1px solid #c9c9c9;
+        margin-top: 14px;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+}
+@media(max-width : 480px ) {
+    header .container-nav nav {
+        width: 60vw;
+        height: calc(100vh - 79px);
+        z-index: 12;
+    }
+    header {
+        z-index: 4;
+    }
+    header .container-nav nav {
+        left: -80vw;
+    }
+}

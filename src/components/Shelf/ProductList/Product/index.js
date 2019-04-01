@@ -7,6 +7,8 @@ import { formatPrice } from '../../../../services/util';
 import { addProduct } from '../../../../services/cart/actions';
 
 const Product = ({ product, addProduct }) => {
+
+  
   product.quantity = 1;
 
   let formattedPrice = formatPrice(product.price, product.currencyId);
@@ -39,7 +41,12 @@ const Product = ({ product, addProduct }) => {
       <Thumb
         classes="shelf-item__thumb"
         src={require(`../../../../static/products/${product.sku}_1.jpg`)}
-        alt={product.title}
+        alt={product.title} 
+      />
+      <Thumb
+        classes="shelf-item__thumb itemNew"
+        src={require(`../../../../static/products/${product.sku}_2.jpg`)}
+        alt={product.title} 
       />
       <p className="shelf-item__title">{product.title}</p>
       <div className="shelf-item__price">

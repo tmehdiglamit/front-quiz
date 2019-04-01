@@ -44,7 +44,22 @@
     border: 1px solid transparent;
     cursor: pointer;
 
+    .itemNew {
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 10px;
+    }
+
     &:hover {
+      background-color: #f7f7f7;
+      .itemNew{
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+      }
       .shelf-item__buy-btn {
         background-color: #ff264b;
       }

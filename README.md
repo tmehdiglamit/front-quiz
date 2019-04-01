@@ -19,7 +19,7 @@ npm run wdio
 
 
 ```
-1.- clonar el repo:
+1.- Hacer ford del repo:
 
 2.- Crear un branch donde el nombre contenga la siguiente nomenclatura:
 Primera letra del nombre seguido del apellido. Ej: Si tu nombre es "Juan Perez" el branch debe llamarse "jperez"
@@ -47,7 +47,7 @@ Contacto
 ```
 4.- desarrollar la feature de cuando el usuario hace mouse hover se muestre la segunda imagen del producto las cuales estan nombradas igual que la primera con la diferencia que terminan en "_2.jpg" en vez de "_1.jpg"
 
-5.- hacer push del branch creado para dejar el ejercicio resuelto en dicho branch
+5.- hacer push del branch creado y pasar la url de github para testear el ejercicio
 
 #### Puntaje por items del ejercicio
 1.- 10 puntos

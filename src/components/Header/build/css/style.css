@@ -1,0 +1,95 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+header {
+  height: 100px;
+  width: 100%;
+  z-index: 10;
+  overflow: visible;
+  background-color: #f4f4f4; }
+  header .navbarNav {
+    padding-left: 0px;
+    display: inline-block;
+    margin-left: 20px;
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 10px; }
+    header .navbarNav li {
+      display: inline-block;
+      color: #272526; }
+      header .navbarNav li:last-child a {
+        padding-right: 0px; }
+    header .navbarNav li a {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      text-decoration: none; }
+    @media (max-width: 767px) {
+      header .navbarNav {
+        margin-top: 0px; } }
+  header .logoHeader {
+    display: inline-block;
+    padding-left: 25px; }
+
+.colMenu {
+  text-align: left;
+  height: 100px; }
+
+header li.headerLink {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold; }
+  header li.headerLink:hover {
+    color: #c3172d; }
+  header li.headerLink a {
+    color: #272526;
+    font-weight: 700;
+    padding-bottom: 10px; }
+    header li.headerLink a:hover {
+      text-decoration: none;
+      color: #c3172d; }
+    header li.headerLink a:focus {
+      text-decoration: none; }
+
+/**
+MENU MODELOS
+**/
+#modelMenu {
+  overflow: hidden;
+  height: 68px;
+  text-align: left;
+  padding: 0px;
+  top: 100%;
+  background: #434345;
+  width: 100%; }
+  #modelMenu .headerLinkMenu {
+    top: 50%;
+    font-weight: bold;
+    max-height: 100%;
+    -webkit-transform: translate(50%, 50%);
+    -khtml-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
+    transform: translate(50%, 50%); }
+  #modelMenu .navbarNav {
+    width: 100%; }
+    #modelMenu .navbarNav li {
+      color: #fafafa; }
+      #modelMenu .navbarNav li:hover {
+        color: #c4172d; }
+    @media (max-width: 767px) {
+      #modelMenu .navbarNav {
+        padding: 15px; } }

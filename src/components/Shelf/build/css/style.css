@@ -1,0 +1,87 @@
+.shelf-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  min-height: 600px; }
+  .shelf-container-header {
+    width: 100%;
+    margin-bottom: 10px; }
+    .shelf-container-header .products-found {
+      float: left;
+      margin: 0;
+      margin-top: 8px; }
+    .shelf-container-header .sort {
+      float: right; }
+      .shelf-container-header .sort select {
+        background-color: #fff;
+        outline: none;
+        border: 1px solid #ececec;
+        border-radius: 2px;
+        margin-left: 10px;
+        width: auto;
+        height: 35px;
+        cursor: pointer; }
+        .shelf-container-header .sort select:hover {
+          border: 1px solid #5b5a5e; }
+  .shelf-container .shelf-item {
+    width: 25%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    cursor: pointer; }
+    .shelf-container .shelf-item .itemNew {
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 10px; }
+    .shelf-container .shelf-item:hover {
+      background-color: #f7f7f7; }
+      .shelf-container .shelf-item:hover .itemNew {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out; }
+      .shelf-container .shelf-item:hover .shelf-item__buy-btn {
+        background-color: #ff264b; }
+    .shelf-container .shelf-item .shelf-stopper {
+      position: absolute;
+      color: #ececec;
+      top: 10px;
+      right: 10px;
+      padding: 5px;
+      font-size: 0.6em;
+      background-color: #1b1a20;
+      cursor: default; }
+    .shelf-container .shelf-item__thumb img {
+      width: 100%; }
+    .shelf-container .shelf-item__title {
+      position: relative;
+      padding: 0 20px;
+      height: 45px; }
+      .shelf-container .shelf-item__title::before {
+        content: '';
+        width: 20px;
+        height: 2px;
+        background-color: #c41230;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -10px; }
+    .shelf-container .shelf-item__price {
+      height: 60px; }
+      .shelf-container .shelf-item__price .val b {
+        font-size: 1.5em;
+        margin-left: 5px; }
+      .shelf-container .shelf-item__price .installment {
+        color: #9c9b9b; }
+    .shelf-container .shelf-item__buy-btn {
+      background-color: #c41230;
+      color: #fff;
+      padding: 15px 0;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s; }

@@ -1,0 +1,25 @@
+//colores
+$textoOscuro: #272526;
+
+$grisOscuro: #434345;
+$gris: #9d9d9d;
+$grisClaro: #f4f4f4;
+$rojo: #c4172d;
+$rojoOscuro: darken($rojo, .3);
+$blanco: #fafafa;
+
+//breakpoints
+
+$mobileMenuBreak: 767px;
+$contentColWidth: 1150px;
+
+//margins
+$marginSmall: 15px;
+$marginMedium: 30px;
+$marginLarge: 60px;
+
+
+//header vars
+$headerHeightDesktop: 100px;
+$hSubmenu: 68px;
+$marginTopButtons: 10px;

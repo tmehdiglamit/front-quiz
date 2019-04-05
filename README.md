@@ -19,10 +19,8 @@ npm run wdio
 
 
 ```
-1.- Hacer ford del repo:
+1.- Hacer fork del repo
 
-2.- Crear un branch donde el nombre contenga la siguiente nomenclatura:
-Primera letra del nombre seguido del apellido. Ej: Si tu nombre es "Juan Perez" el branch debe llamarse "jperez"
 _Para instalar el repo correr los siguientes comandos:_
 ```javascript$
 npm install
@@ -31,7 +29,7 @@ _Para levantar el entorno localmente correr el siguiente comando:_
 ```javascript$
 $ npm start
 ```
-3.- Crear un modulo Header con un menu desplegable de dos niveles:
+2.- Crear un modulo Header con un menu desplegable de dos niveles:
 ```javascript
 [LOGO]
 Hombre
@@ -45,20 +43,18 @@ Mujer
 Contacto
 [Buscador inline sin funcionalidad]
 ```
-4.- desarrollar la feature de cuando el usuario hace mouse hover se muestre la segunda imagen del producto las cuales estan nombradas igual que la primera con la diferencia que terminan en "_2.jpg" en vez de "_1.jpg"
+3.- desarrollar la feature de cuando el usuario hace mouse hover se muestre la segunda imagen del producto las cuales estan nombradas igual que la primera con la diferencia que terminan en "_2.jpg" en vez de "_1.jpg"
 
-5.- hacer push del branch creado y pasar la url de github para testear el ejercicio
+4.- Hacer push para dejar el ejercicio resuelto y pasar el link del fork por mail.
 
 #### Puntaje por items del ejercicio
-1.- 10 puntos
+1.- 20 puntos
 <br />
 2.- 20 puntos
 <br />
-3.- 40 puntos
+3.- 50 puntos
 <br />
-4.- 20 puntos
-<br />
-5.- 10 puntos
+4.- 10 puntos
 <br />
 <br />
 Puntos extras por diseño responsive 😃

@@ -13,6 +13,31 @@ const Product = ({ product, addProduct }) => {
 
   let productInstallment;
 
+  let imgSrc = require(`../../../../static/products/${product.sku}_1.jpg`);
+
+
+  function handleMouseOver(element) {
+
+    let imgSrcChange = require(`../../../../static/products/${product.sku}_2.jpg`);
+    let sku= product.sku;
+
+    //imgSrc = document.getElementById(sku).src;
+    imgSrc = document.getElementById(sku);
+    imgSrc.src = imgSrcChange;
+  }
+
+  function handleMouseOut(element) {
+
+      let imgSrcChange = require(`../../../../static/products/${product.sku}_1.jpg`);
+      let sku= product.sku;
+
+      //imgSrc = document.getElementById(sku).src;
+      imgSrc = document.getElementById(sku);
+      imgSrc.src = imgSrcChange;
+  }
+
+
+
   if (!!product.installments) {
     const installmentPrice = product.price / product.installments;
 
@@ -28,18 +53,24 @@ const Product = ({ product, addProduct }) => {
   }
 
   return (
+
+  
     <div
       className="shelf-item"
       onClick={() => addProduct(product)}
       data-sku={product.sku}
+      onMouseOver={() => handleMouseOver()}
+      onMouseOut={() => handleMouseOut()}
     >
       {product.isFreeShipping && (
         <div className="shelf-stopper">Envío gratis</div>
       )}
       <Thumb
         classes="shelf-item__thumb"
-        src={require(`../../../../static/products/${product.sku}_1.jpg`)}
+        src={imgSrc}
         alt={product.title}
+        sku={product.sku}
+        
       />
       <p className="shelf-item__title">{product.title}</p>
       <div className="shelf-item__price">

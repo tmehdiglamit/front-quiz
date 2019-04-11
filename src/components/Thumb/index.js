@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Thumb = props => {
   return (
     <div className={props.classes}>
-      <img src={props.src} alt={props.alt} title={props.title} />
+      <img id={props.sku} src={props.src} alt={props.alt} title={props.title} />
     </div>
   );
 };
@@ -12,6 +12,7 @@ const Thumb = props => {
 Thumb.propTypes = {
   alt: PropTypes.string,
   title: PropTypes.string,
+  sku: PropTypes.sku,
   classes: PropTypes.string,
   src: PropTypes.string.isRequired
 };

@@ -19,7 +19,7 @@ class Shelf extends Component {
   };
 
   state = {
-    isLoading: false
+    isLoading: false,
   };
 
   componentDidMount() {
@@ -51,6 +51,7 @@ class Shelf extends Component {
   render() {
     const { products } = this.props;
     const { isLoading } = this.state;
+    const { imageNumber } = this.state;
 
     return (
       <React.Fragment>
@@ -67,7 +68,7 @@ class Shelf extends Component {
 const mapStateToProps = state => ({
   products: state.shelf.products,
   filters: state.filters.items,
-  sort: state.sort.type
+  sort: state.sort.type,
 });
 
 export default connect(
